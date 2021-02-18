@@ -1,9 +1,10 @@
 def calendar(m):
-    for i in range (0, len(months)):
-        if m == months[i]:
+    for i in range (0, 12):
+        if months[i] == m:
             return i + 1
 
-        return m + " is not a month"
+    return m + " is not a month"
+        
+months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] 
 
-        months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] 
 
